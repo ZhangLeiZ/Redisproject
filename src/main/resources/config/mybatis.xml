@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+     <settings>
+        <!--开启缓存-->
+        <setting name="cacheEnabled" value="true"/>
+        <!--开启日志-->
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+        <!--允许 JDBC 支持自动生成主键-->
+        <setting name="useGeneratedKeys" value="true" />
+        <!--使用列标签代替列名-->
+        <setting name="useColumnLabel" value="true" />
+        <!--开启驼峰式命名规则-->
+        <setting name="mapUnderscoreToCamelCase" value="true" />
+    </settings>
+
+    <typeAliases>
+        <package name="com.zl.bean"/>
+    </typeAliases>
+
+</configuration>
